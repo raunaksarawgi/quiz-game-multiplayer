@@ -104,7 +104,7 @@ export default function QuizScreen({
   const submitAnswer = useCallback(async (finalAnswer: number) => {
     try {
       const timeSpent = (timerState?.questionDuration || 30) - timeLeft
-      const isCorrect = finalAnswer === (currentQuestion?.correctAnswer || -1)
+      const isCorrect = finalAnswer === (currentQuestion?.correctAnswer ?? -1)
       const questionIndex = roomInfo?.currentQuestionIndex || 0
       
       // Calculate score for this question
@@ -334,7 +334,7 @@ export default function QuizScreen({
                 {selectedAnswer === currentQuestion.correctAnswer ? (
                   <p className="correct-answer">🎉 Correct! +{Math.round(1000 + (timeLeft / (timerState?.questionDuration || currentQuestion.timeLimit || 30)) * 200)} points</p>
                 ) : (
-                  <p className="incorrect-answer">❌ Incorrect. Correct answer: {String.fromCharCode(65 + (currentQuestion.correctAnswer || 0))}</p>
+                  <p className="incorrect-answer">❌ Incorrect. Correct answer: {String.fromCharCode(65 + (currentQuestion.correctAnswer ?? 0))}</p>
                 )}
               </div>
             )}

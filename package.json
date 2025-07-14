@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "type-check": "tsc --noEmit",
     "test:build": "npm run type-check && npm run build:prod",
-    "start": "npm run preview"
+    "start": "npm run preview",
+    "seed": "node scripts/seed-firestore.js"
   },
   "dependencies": {
     "dotenv": "^17.0.1",

@@ -415,7 +415,7 @@ class RoomService {
           id: question.id || `q_${index}`,
           question: question.question || '',
           options: question.options || [],
-          correctAnswer: question.correctAnswer || 0,
+          correctAnswer: question.correctAnswer ?? 0,
           timeLimit: question.timeLimit || 30,
           category: question.category || 'general',
           difficulty: question.difficulty || 'medium',
