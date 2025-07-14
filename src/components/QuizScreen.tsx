@@ -266,8 +266,14 @@ export default function QuizScreen({
             className="progress-fill" 
             style={{ width: `${progressPercentage}%` }}
           ></div>
+        </div>
+        
+        <div className="progress-info">
           <span className="question-counter">
-            {questionNumber} / {totalQuestions}
+            Question {questionNumber} of {totalQuestions}
+          </span>
+          <span className="progress-percentage">
+            {Math.round(progressPercentage)}% Complete
           </span>
         </div>
       </div>
