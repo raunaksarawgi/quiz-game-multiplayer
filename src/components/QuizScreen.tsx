@@ -338,7 +338,7 @@ export default function QuizScreen({
             {answered && (
               <div className="answer-result">
                 {selectedAnswer === currentQuestion.correctAnswer ? (
-                  <p className="correct-answer">🎉 Correct! +{Math.round(1000 + (timeLeft / (timerState?.questionDuration || currentQuestion.timeLimit || 30)) * 200)} points</p>
+                  <p className="correct-answer">🎉 Correct! +1000 points</p>
                 ) : (
                   <p className="incorrect-answer">❌ Incorrect. Correct answer: {String.fromCharCode(65 + (currentQuestion.correctAnswer ?? 0))}</p>
                 )}
