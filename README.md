@@ -4,7 +4,7 @@
 
 ![QUIZMO Logo](public/icons8-quizizz.svg)
 
-**A modern, real-time multiplayer quiz application built with React, TypeScript, and Firebase**
+**A real-time multiplayer quiz application built with React and Firebase**
 
 
 </div>
@@ -18,7 +18,7 @@
 - **Room-based system** with unique codes for easy joining
 - **Live leaderboard** updates during gameplay
 - **Instant answer feedback** with correct answer reveals
-- **Final results screen** with comprehensive player statistics
+- **Final results screen** with player statistics
 
 ### 🏗️ **Technical Features**
 - **Anonymous authentication** for seamless user experience
@@ -27,7 +27,7 @@
 - **TypeScript** for type safety
 
 ### 🎯 **Game Features**
-- Customizable question categories
+- Multiple question categories
 - Configurable number of questions per quiz
 - Automatic question advancement with timers
 - Player performance tracking
@@ -67,18 +67,20 @@ quizmo/
 2. **Share Code** - Give the room code to players
 3. **Start Quiz** - Begin the game when ready
 4. **Monitor Progress** - Watch live leaderboard updates
+5. **View Results** - Check final rankings and stats
 
 ### For Players:
 1. **Join Room** - Enter the room code
 2. **Wait in Lobby** - See other players joining
 3. **Answer Questions** - Submit answers before time runs out
-4. **View Results** - Check final rankings and stats
+4. **Monitor Progress** - Watch live leaderboard updates
+5. **View Results** - Check final rankings and stats
 
 
 
 ### Tech Stack
 
-- **Frontend**: React 18, TypeScript
+- **Frontend**: React
 - **Backend**: Firebase (Firestore, Authentication)
 - **Build Tool**: Vite
 - **Deployment**: render.com
